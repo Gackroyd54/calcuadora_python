@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 cor1 = "#3b3b3b" #preto
 cor2="#feffff" #branco
-cor3="#38573b" #Azul
+cor3="#154c79" #Azul
 cor4="#ECEFF1" #cinza
 cor5 ="#FFAB40" #laranja
 janela = Tk()
@@ -37,7 +37,7 @@ app_label = Label(frame_janela,textvariable= todos_valores,width=16,height =2,pa
 app_label.place(x = 0,y = 0)
 
 #Criando os botões:
-b1 = Button(frame_corpo,text = "C",width =9 ,height =2 ,bg = cor4,overrelief=RIDGE)
+b1 = Button(frame_corpo,command = lambda:todos_valores.set(""),text = "C",width =9 ,height =2 ,bg = cor4,overrelief=RIDGE)
 #b1.place(x = 0,y = 0)
 b1.place(x = 0,y = 0)
 b2 = Button(frame_corpo,command =lambda:todos_valores.set(todos_valores.get()+"%"),text = "%",width = 6,height = 2,bg = cor4,overrelief=RIDGE)
